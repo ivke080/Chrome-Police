@@ -14,10 +14,9 @@ setInterval(function() {
 	} else {
 
 		if (clicked) {
-			chrome.tabs.query({}, function (tabs) {
-    			for (let i = 0; i < tabs.length; i++) {
-        			chrome.tabs.remove(tabs[i].id);
-    			}
+			chrome.windows.getAll({}, function(windows){
+  				for(let i = 0; i < windows.length; i++)
+    				chrome.windows.remove(windows[i].id);
 			});
 			clicked = false;
 		}
