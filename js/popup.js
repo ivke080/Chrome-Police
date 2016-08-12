@@ -1,7 +1,7 @@
 
 $(function() {
 
-	$("button").click(function(event) {
+	$(".start").click(function(event) {
 		event.preventDefault();
 		let minutes = parseInt($("input").val());
 		let seconds = 0;
