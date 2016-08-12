@@ -19,6 +19,7 @@ setInterval(function() {
         			chrome.tabs.remove(tabs[i].id);
     			}
 			});
+			clicked = false;
 		}
 	}
 }, 1000);
