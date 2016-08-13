@@ -8,13 +8,9 @@
 <body>
 	<div class="siren siren-left"></div><div class="siren siren-right"></div>
 	<header>CHROME POLICE</header>
-	<div class="bumper">
-		<div class="light left-light"></div>
-		<div class="remaining">00:00</div>
-		<div class="light right-light"></div>
-	</div>
-	<input type="text" class="minutes" placeholder="min" />
-	<button class="start">Start</button>
+	<div class="remaining">00:00</div>
+	<input type="number" class="minutes" placeholder="min" maxlength="2" min="1" max="60" />
+	<div class="start">Catch</div>
 
 	<script src="js/jquery.min.js"></script>
 	<script src="js/popup.js"></script>
