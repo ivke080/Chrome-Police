@@ -17,7 +17,7 @@ $(function() {
 		let seconds = 0;
 		if ($(this).attr("class").indexOf("non-clickable") < 0) {
 			chrome.runtime.sendMessage({minutes, seconds});
-			$("input").val();
+			$("input").val('');
 			$(this).addClass("non-clickable");
 		}
 	});
